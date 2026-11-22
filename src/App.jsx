@@ -5,7 +5,7 @@ import JumpGame from './pages/JumpGame'
 function App() {
 
   return (
-    <div className='text-green-500'>
+    <div className=''>
       <Routes>
         <Route path='/' element={<>home</>}/>
         <Route path='/play' element={<JumpGame/>}/>
