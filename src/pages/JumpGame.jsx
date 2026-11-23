@@ -148,8 +148,8 @@ return(
         {gameOver&&<div className="w-[100%] h-[100vh] gap-2 flex flex-col items-center justify-center ">
             <p className="text-5xl p-4 font-semibold bg-white shadow-lg  rounded-lg text-red-500">GAME OVER!</p>
             <div className="flex gap-4">
-                <p className="text-xl font-semibold">SCORE: {score}</p>
-                <p className="text-xl font-semibold">SPEED: {Speed||0} w/m</p>
+                <p className="text-xl font-bold">SCORE: <span className="text-xl font-semibold text-blue-900">{score}</span></p>
+                <p className="text-xl font-bold">SPEED: <span className="text-xl font-semibold text-blue-900">{Speed||0} w/m</span></p>
             </div>
             <div className="flex gap-2">
             <button onClick={()=>window.location.reload()} className="p-2 text-xl bg-green-500 text-white font-semibold rounded-lg shadow-lg cursor-pointer">REPLAY</button>
@@ -159,8 +159,8 @@ return(
         {!gameOver&&<div className="flex justify-around px-5 items-center gap-2">
             <div className="flex gap-2 flex-col ">
                 <div className="flex gap-2">
-                <p className="text-xl font-semibold">LEVEL: {level}</p>
-                <p className="text-xl font-semibold">STAGE: {stage}</p>
+                <p className="text-xl font-semibold">LEVEL: <span className="text-xl font-semibold text-blue-900">{level}</span></p>
+                <p className="text-xl font-semibold">STAGE: <span className="text-xl font-semibold text-blue-900">{stage}</span></p>
                 </div>
                 <p className="text-xl font-semibold">❤️ {lifes}</p>
             </div>
@@ -173,8 +173,8 @@ return(
             )
             })}</p>
             <div>
-                <p className="text-xl font-semibold">SCORE: {score}</p>
-                <p className="text-xl font-semibold">SPEED: {Speed||0} w/m</p>
+                <p className="text-xl font-semibold">SCORE: <span className="text-xl font-semibold text-blue-900">{score}</span></p>
+                <p className="text-xl font-semibold">SPEED: <span className="text-xl font-semibold text-blue-900">{Speed||0} w/m</span></p>
             </div>
             <button onClick={()=>setShowPopup(true)} className="bg-white rounded-lg shadow-lg text-red-400 cursor-pointer font-semibold border-2 p-2 border-red-400">Finish</button>
         </div>}
