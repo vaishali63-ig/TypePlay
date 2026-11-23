@@ -143,10 +143,10 @@ const JumpGame = ()=>{
 
 return(
     <div style={{backgroundImage:`url(${bg})`}} className="h-[100vh] bg-cover bg-center" >
-        {showWrongAlert&&<PopUp text1="WRONG INPUT!" text2={"your input does not metch with expacted text shown on top. You louse 1 life for wrong submition corrent lives: " +lifes} ShowCancel={false} headingStyle="text-red-500" triggerFunction={()=>setShowWrongAlert(false)} />}
+        {showWrongAlert&&<PopUp text1="WRONG INPUT!" text2={"your input does not metch with expacted text shown on top. You lose 1 life for wrong submition corrent lives: " +lifes} ShowCancel={false} headingStyle="text-red-500" triggerFunction={()=>setShowWrongAlert(false)} />}
         {showPopup&&<PopUp setShowPopup={setShowPopup} text1="DO YOU WANT TO FINISH THE GAME?" text2={`Game is not Over Now.You still have ${lifes}❤️. To continue click on Cancel else click on ok to Finish the gmae`} triggerFunction={()=>{setGameOver(true); setShowPopup(false)}}/>}
         {gameOver&&<div className="w-[100%] h-[100vh] gap-2 flex flex-col items-center justify-center ">
-            <p className="text-5xl p-2 font-semibold bg-white shadow-lg  rounded-lg text-red-500">GAME OVER!</p>
+            <p className="text-5xl p-4 font-semibold bg-white shadow-lg  rounded-lg text-red-500">GAME OVER!</p>
             <div className="flex gap-4">
                 <p className="text-xl font-semibold">SCORE: {score}</p>
                 <p className="text-xl font-semibold">SPEED: {Speed||0} w/m</p>
